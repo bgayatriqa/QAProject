@@ -1,0 +1,15 @@
+Test Case 01:Enter correct username and password
+
+step 1:open the url "https://login.salesforce.com/"
+step 2:Enter correct username in the username textbox
+step 3: Enter correct password in the password textbox
+step 4: click on login button
+step 5: should succesfully go to home page
+
+Test Case 02:Enter correct username and wrong password
+
+step 1:open the url "https://login.salesforce.com/"
+step 2:Enter correct username in the username textbox
+step 3: Enter wrong password in the password textbox
+step 4: click on login button
+step 5: should display error message "Please check your username and password. If you still can't log in, contact your Salesforce administrator.
