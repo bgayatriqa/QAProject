@@ -21,7 +21,7 @@ public class SalesforceLoginPage {
 		//driver = new FirefoxDriver();
 		//driver = new ChromeDriver();
 		driver = new InternetExplorerDriver();
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
  driver.get("https://login.salesforce.com/");
 // Thread.sleep(5000);
  WebElement userName = driver.findElement(By.id("username"));
