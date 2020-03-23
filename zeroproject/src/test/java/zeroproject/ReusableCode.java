@@ -48,14 +48,22 @@ public class ReusableCode {
 		driver.get(url);
 		 driver.manage().window().maximize();
 	}
-@AfterClass
+@AfterMethod
 	public static void closeBrowser() {
-	report.flush();
+	//report.flush();
 		driver.quit();
+		
 	}
 
+public static void close()
+{
+	driver.close();
+}
+@AfterTest
 	public static void closeReport() {
+	
 		report.flush();
+		//driver.close();
 	}
 @BeforeTest
 	public static void createReport() {
