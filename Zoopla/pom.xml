@@ -18,7 +18,12 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.19.1</version>
-           
+           <configuration>
+                <suiteXmlFiles>
+<!--               <suiteXmlFile>C:\Users\vamsi\Desktop\Git_projects\QAProject\Zoopla\src\test\resources\tests.xml</suiteXmlFile> -->
+<suiteXmlFile>${project.basedir}\src\test\resources\tests.xml</suiteXmlFile>
+                </suiteXmlFiles>
+                </configuration>
      </plugin>
    </plugins>
   </build>

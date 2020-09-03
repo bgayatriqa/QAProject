@@ -43,8 +43,13 @@ public class ListingsPage {
 		public PropertyDetailsPage pickingFifthListing() throws InterruptedException
 		{
 			Thread.sleep(2000);
-			listings.get(4).findElement(By.xpath("./..//h2[@class='listing-results-attr']//a")).click();
-			//Thread.sleep(4000);
+			WebElement fifthListing=listings.get(4).findElement(By.xpath("./..//h2[@class='listing-results-attr']//a"));
+			System.out.println("The fifth listing is : "+fifthListing.getText());
+			fifthListing.click();
+			System.out.println("The fifth listing is clicked: ");
+					
+			//listings.get(4).findElement(By.xpath("./..//h2[@class='listing-results-attr']//a")).click();
+			System.out.println("");
 			return new PropertyDetailsPage(driver);
 		}
 		
